@@ -123,7 +123,7 @@ const Banner = () => {
       </div>
 
       {/* Image Section with advanced effects */}
-      <div className="flex-1 w-full lg:w-1/2 flex items-center justify-center z-10">
+      <div className=" max-sm:mt-20 flex-1 w-full lg:w-1/2 flex items-center justify-center z-10">
         <div className="relative group">
           {/* Outer rotating ring */}
           <div className="absolute -inset-8 bg-gradient-to-r from-purple-400 via-purple-500 to-purples-400 rounded-full opacity-30 blur-2xl animate-spin-slow"></div>
