@@ -42,7 +42,10 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="relative min-h-screen py-20 overflow-hidden bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950">
+    <section
+      id="about"
+      className="relative min-h-screen py-20 overflow-hidden bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950"
+    >
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 -left-20 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
@@ -124,17 +127,7 @@ const About = () => {
                 type="cv"
                 btn="Download CV"
                 value=""
-                className="
-              group relative
-              bg-gradient-to-r from-green-600 to-green-700 
-              hover:from-green-700 hover:to-green-800 
-              text-white font-semibold
-              px-8 py-4 rounded-xl
-              shadow-lg hover:shadow-2xl hover:shadow-green-500/50
-              transition-all duration-300 ease-in-out
-              min-w-[180px] text-center
-              overflow-hidden
-              before:absolute before:inset-0 before:bg-white/20 before:translate-y-full hover:before:translate-y-0 before:transition-transform before:duration-300
+                className=" group relative bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-2xl hover:shadow-green-500/50 transition-all duration-300 ease-in-out sm:min-w-[180px] w-full text-center overflow-hidden before:absolute before:inset-0 before:bg-white/20 before:translate-y-full hover:before:translate-y-0 before:transition-transform before:duration-300
             "
                 aria_label="Download my CV"
               />
@@ -143,17 +136,7 @@ const About = () => {
                 type="view_projects"
                 btn="View Projects"
                 value=""
-                className="
-              group relative
-              bg-gradient-to-r from-yellow-600 to-yellow-700 
-              hover:from-yellow-700 hover:to-yellow-800 
-              text-white font-semibold
-              px-8 py-4 rounded-xl
-              shadow-lg hover:shadow-2xl hover:shadow-yellow-500/50
-              transition-all duration-300 ease-in-out
-              min-w-[180px] text-center
-              overflow-hidden
-              before:absolute before:inset-0 before:bg-white/20 before:translate-y-full hover:before:translate-y-0 before:transition-transform before:duration-300
+                className=" group relative bg-gradient-to-r from-yellow-600 to-yellow-700 hover:from-yellow-700 hover:to-yellow-800 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-2xl hover:shadow-yellow-500/50 transition-all duration-300 ease-in-out sm:min-w-[180px] w-full text-center overflow-hidden before:absolute before:inset-0 before:bg-white/20 before:translate-y-full hover:before:translate-y-0 before:transition-transform before:duration-300
             "
                 aria_label="View Projects"
               />
