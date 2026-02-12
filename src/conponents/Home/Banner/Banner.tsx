@@ -86,14 +86,14 @@ const Banner = () => {
             type="cv"
             btn="Download CV"
             value=""
-            className=" group relative bg-gradient-to-r from-green-600 to-green-700  hover:from-green-700 hover:to-green-800  text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-2xl hover:shadow-green-500/50 transition-all duration-300 ease-in-out sm:min-w-[180px] w-full text-center overflow-hidden before:absolute before:inset-0 before:bg-white/20 before:translate-y-full hover:before:translate-y-0 before:transition-transform before:duration-300 "
+            className=" group relative bg-gradient-to-r from-green-600 to-green-700  hover:from-green-700 hover:to-green-800  text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-2xl hover:shadow-green-500/50 transition-all duration-300 ease-in-out  w-full text-center overflow-hidden before:absolute before:inset-0 before:bg-white/20 before:translate-y-full hover:before:translate-y-0 before:transition-transform before:duration-300 "
             aria_label="Download my CV"
           />
           <Btn
             type="resume"
             btn="Download Resume"
             value=""
-            className=" group relative bg-gradient-to-r from-yellow-600 to-yellow-700  hover:from-yellow-700 hover:to-yellow-800  text-white font-semibold  px-8 py-4 rounded-xl shadow-lg hover:shadow-2xl hover:shadow-yellow-500/50 transition-all duration-300 ease-in-out  sm:min-w-[180px] w-full text-center overflow-hidden before:absolute before:inset-0 before:bg-white/20 before:translate-y-full hover:before:translate-y-0 before:transition-transform before:duration-300 "
+            className=" group relative bg-gradient-to-r from-yellow-600 to-yellow-700  hover:from-yellow-700 hover:to-yellow-800  text-white font-semibold  px-8 py-4 rounded-xl shadow-lg hover:shadow-2xl hover:shadow-yellow-500/50 transition-all duration-300 ease-in-out   w-full text-center overflow-hidden before:absolute before:inset-0 before:bg-white/20 before:translate-y-full hover:before:translate-y-0 before:transition-transform before:duration-300 "
             aria_label="Download my resume"
           />
         </div>
