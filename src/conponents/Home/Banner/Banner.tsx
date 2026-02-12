@@ -26,7 +26,7 @@ const Banner = () => {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
           </span>
-          <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+          <span className="text-sm font-medium text-gray-300">
             Available for new opportunities
           </span>
         </div>
@@ -38,7 +38,7 @@ const Banner = () => {
             <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 via-purple-700 to-yellow-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200 animate-gradient-x"></div>
 
             <div className="relative bg-gradient-to-br from-purple-500/10 via-transparent to-purple-500/10 backdrop-blur-md rounded-2xl p-8 lg:p-10 border border-purple-500/20 shadow-2xl">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 dark:from-white dark:via-gray-100 dark:to-white bg-clip-text text-transparent leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold bg-gradient-to-r  from-white via-gray-100 to-white bg-clip-text text-transparent leading-tight">
                 <TypeWriter
                   texts={[
                     "Hello, I'm Hirock",
@@ -54,7 +54,7 @@ const Banner = () => {
           </div>
 
           {/* Subtitle with icon */}
-          <div className="flex items-start gap-4 p-6 bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm rounded-xl border border-gray-200/50 dark:border-gray-700/50 shadow-lg">
+          <div className="flex items-start gap-4 p-6 bg-gray-900/50 backdrop-blur-sm rounded-xl border  border-gray-700/50 shadow-lg">
             <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-400 to-purple-400 rounded-lg flex items-center justify-center shadow-lg">
               <svg
                 className="w-6 h-6 text-white"
@@ -70,7 +70,7 @@ const Banner = () => {
                 />
               </svg>
             </div>
-            <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed flex-1">
+            <p className="text-lg md:text-xl text-gray-300 leading-relaxed flex-1">
               Full-stack developer passionate about creating{" "}
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
                 innovative solutions
@@ -100,31 +100,23 @@ const Banner = () => {
 
         {/* Stats or Social Proof */}
         <div className="flex flex-wrap gap-6 pt-6">
-          <div className="flex items-center gap-3 px-4 py-3 bg-white/70 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md">
+          <div className="flex items-center gap-3 px-4 py-3 bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md">
             <div className="w-10 h-10 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">
               5+
             </div>
             <div>
-              <p className="text-xs text-gray-500 dark:text-gray-400">
-                Years of
-              </p>
-              <p className="text-sm font-semibold text-gray-900 dark:text-white">
-                Experience
-              </p>
+              <p className="text-xs text-gray-400">Years of</p>
+              <p className="text-sm font-semibold text-white">Experience</p>
             </div>
           </div>
 
-          <div className="flex items-center gap-3 px-4 py-3 bg-white/70 dark:bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md">
+          <div className="flex items-center gap-3 px-4 py-3 bg-gray-900/70 backdrop-blur-sm rounded-lg shadow-md">
             <div className="w-10 h-10 bg-gradient-to-br from-green-400 to-green-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">
               50+
             </div>
             <div>
-              <p className="text-xs text-gray-500 dark:text-gray-400">
-                Projects
-              </p>
-              <p className="text-sm font-semibold text-gray-900 dark:text-white">
-                Completed
-              </p>
+              <p className="text-xs text-gray-400">Projects</p>
+              <p className="text-sm font-semibold text-white">Completed</p>
             </div>
           </div>
         </div>
@@ -146,7 +138,7 @@ const Banner = () => {
           {/* Main Image Container */}
           <div className="relative">
             {/* Glass morphism frame */}
-            <div className="absolute -inset-4 bg-gradient-to-br from-white/40 to-white/10 dark:from-gray-800/40 dark:to-gray-900/10 backdrop-blur-xl rounded-full border border-white/20"></div>
+            <div className="absolute -inset-4 bg-gradient-to-br  from-gray-800/40 to-gray-900/10 backdrop-blur-xl rounded-full border border-white/20"></div>
 
             <Image
               src="/banner/Hirock200.png"
