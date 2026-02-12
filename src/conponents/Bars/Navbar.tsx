@@ -39,8 +39,8 @@ const Navbar = () => {
           transition-all duration-500 ease-in-out
           ${
             isScrolled
-              ? "bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl shadow-lg border-b border-gray-200/50 dark:border-gray-700/50"
-              : "bg-transparent border-b border-gray-200/30 dark:border-gray-700/30"
+              ? "bg-gray-900/80 backdrop-blur-xl shadow-lg border-b border-gray-700/50"
+              : "bg-transparent border-b border-gray-700/30"
           }
         `}
       >
@@ -130,7 +130,7 @@ const Navbar = () => {
             >
               <div className="w-6 h-6 flex flex-col justify-center items-center">
                 <span
-                  className={`block h-0.5 w-6 bg-gray-900 dark:bg-white transition-all duration-300 ${
+                  className={`block h-0.5 w-6 bg-white transition-all duration-300 ${
                     isMobileMenuOpen ? "rotate-45 translate-y-1.5" : ""
                   }`}
                 ></span>
@@ -200,7 +200,7 @@ const Navbar = () => {
                     ${
                       activeLink === link.href
                         ? "bg-gradient-to-r from-yellow-500 to-green-500 text-white shadow-lg"
-                        : "text-gray-700 dark:text-gray-300 hover:bg-gradient-to-r hover:from-yellow-400/10 hover:to-green-400/10"
+                        : "text-gray-300 hover:bg-gradient-to-r hover:from-yellow-400/10 hover:to-green-400/10"
                     }
                   `}
                   style={{
