@@ -5,7 +5,7 @@ import Image from "next/image";
 const Banner = () => {
   return (
     <section
-      className="relative flex max-lg:flex-col-reverse items-center justify-between min-h-[90vh] max-w-[1440px] mx-auto px-6 md:px-8 lg:px-12 py-16 lg:py-20 gap-12 overflow-hidden"
+      className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 relative flex max-lg:flex-col-reverse items-center justify-between min-h-[90vh] max-w-[1440px] mx-auto px-6 md:px-8 lg:px-12 py-16 lg:py-20 gap-12 overflow-hidden"
       aria-label="Hero banner section"
     >
       {/* Animated Background Elements */}
