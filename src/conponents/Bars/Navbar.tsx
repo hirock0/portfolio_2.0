@@ -58,7 +58,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="flex items-baseline">
-                  <span className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white tracking-tight">
+                  <span className="text-xl md:text-2xl lg:text-3xl font-bold text-white tracking-tight">
                     HIROCK
                   </span>
                   <span className="text-xl md:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-400  bg-clip-text text-transparent ml-1 group-hover:from-green-400 group-hover:to-yellow-400 transition-all duration-300">
@@ -81,7 +81,7 @@ const Navbar = () => {
                     ${
                       activeLink === link.href
                         ? "text-white"
-                        : "text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+                        : "text-gray-700  "
                     }
                   `}
                 >
@@ -135,12 +135,12 @@ const Navbar = () => {
                   }`}
                 ></span>
                 <span
-                  className={`block h-0.5 w-6 bg-gray-900 dark:bg-white my-1 transition-all duration-300 ${
+                  className={`block h-0.5 w-6 bg-white my-1 transition-all duration-300 ${
                     isMobileMenuOpen ? "opacity-0" : ""
                   }`}
                 ></span>
                 <span
-                  className={`block h-0.5 w-6 bg-gray-900 dark:bg-white transition-all duration-300 ${
+                  className={`block h-0.5 w-6 bg-white transition-all duration-300 ${
                     isMobileMenuOpen ? "-rotate-45 -translate-y-1.5" : ""
                   }`}
                 ></span>
@@ -176,7 +176,7 @@ const Navbar = () => {
         <div
           className={`
             absolute top-20 right-0 bottom-0 w-80 max-w-[85vw]
-            bg-white dark:bg-gray-900 
+            bg-gray-900 
             shadow-2xl
             transition-transform duration-500 ease-out
             ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"}
