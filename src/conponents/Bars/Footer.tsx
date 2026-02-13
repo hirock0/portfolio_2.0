@@ -86,7 +86,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="relative bg-white dark:bg-gray-950 border-t border-gray-200 dark:border-gray-800 overflow-hidden">
+    <footer className="relative overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none -z-10">
         <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-yellow-400/20 rounded-full blur-3xl"></div>
@@ -109,29 +109,29 @@ const Footer = () => {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+                <h3 className="text-xl font-bold text-white">
                   Hirock
                 </h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
+                <p className="text-sm text-gray-400">
                   Full-stack Developer
                 </p>
               </div>
             </div>
-            <p className="text-gray-600 dark:text-gray-400 text-sm mb-6 leading-relaxed">
+            <p className="text-gray-400 text-sm mb-6 leading-relaxed">
               Passionate about creating innovative digital solutions that drive
               business growth and enhance user experiences.
             </p>
 
             {/* Newsletter Signup */}
             <div className="space-y-3">
-              <p className="text-sm font-semibold text-gray-900 dark:text-white">
+              <p className="text-sm font-semibold text-white">
                 Stay Updated
               </p>
               <div className="flex gap-2">
                 <input
                   type="email"
                   placeholder="Your email"
-                  className="flex-1 px-4 py-2 bg-gray-100 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-lg text-sm text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
+                  className="flex-1 px-4 py-2 :bg-gray-900 border border-gray-700 rounded-lg text-sm text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
                 />
                 <button className="px-4 py-2 bg-gradient-to-r from-blue-400 to-purple-400 text-white font-medium rounded-lg hover:from-yellow-600 hover:to-green-600 transition-all duration-300 shadow-md hover:shadow-lg">
                   <svg
@@ -154,7 +154,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-sm font-bold text-gray-900 dark:text-white uppercase tracking-wider mb-4">
+            <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-4">
               Quick Links
             </h4>
             <ul className="space-y-3">
@@ -162,7 +162,7 @@ const Footer = () => {
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-gray-600 dark:text-gray-400 hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors duration-300 text-sm flex items-center gap-2 group"
+                    className="text-gray-400 hover:text-yellow-400 transition-colors duration-300 text-sm flex items-center gap-2 group"
                   >
                     <span className="w-0 group-hover:w-2 h-0.5 bg-gradient-to-r from-yellow-500 to-green-500 transition-all duration-300"></span>
                     {item.name}
@@ -174,7 +174,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-sm font-bold text-gray-900 dark:text-white uppercase tracking-wider mb-4">
+            <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-4">
               Services
             </h4>
             <ul className="space-y-3">
@@ -182,7 +182,7 @@ const Footer = () => {
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400 transition-colors duration-300 text-sm flex items-center gap-2 group"
+                    className="text-gray-400 hover:text-green-400 transition-colors duration-300 text-sm flex items-center gap-2 group"
                   >
                     <span className="w-0 group-hover:w-2 h-0.5 bg-gradient-to-r from-green-500 to-yellow-500 transition-all duration-300"></span>
                     {item.name}
@@ -194,13 +194,13 @@ const Footer = () => {
 
           {/* Contact & Social */}
           <div>
-            <h4 className="text-sm font-bold text-gray-900 dark:text-white uppercase tracking-wider mb-4">
+            <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-4">
               Get in Touch
             </h4>
             <div className="space-y-4 mb-6">
               <a
                 href="mailto:your.email@example.com"
-                className="flex items-center gap-3 text-gray-600 dark:text-gray-400 hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors duration-300 group"
+                className="flex items-center gap-3 text-gray-400 hover:text-yellow-400 transition-colors duration-300 group"
               >
                 <div className="w-10 h-10 bg-gradient-to-br from-yellow-500/20 to-green-500/20 rounded-lg flex items-center justify-center group-hover:from-yellow-500/30 group-hover:to-green-500/30 transition-all duration-300">
                   <svg
@@ -218,7 +218,7 @@ const Footer = () => {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500 dark:text-gray-400">
+                  <p className="text-xs text-gray-400">
                     Email
                   </p>
                   <p className="text-sm font-medium">your.email@example.com</p>
@@ -227,7 +227,7 @@ const Footer = () => {
 
               <a
                 href="tel:+1234567890"
-                className="flex items-center gap-3 text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400 transition-colors duration-300 group"
+                className="flex items-center gap-3 text-gray-400 hover:text-green-400 transition-colors duration-300 group"
               >
                 <div className="w-10 h-10 bg-gradient-to-br from-green-500/20 to-yellow-500/20 rounded-lg flex items-center justify-center group-hover:from-green-500/30 group-hover:to-yellow-500/30 transition-all duration-300">
                   <svg
@@ -245,7 +245,7 @@ const Footer = () => {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500 dark:text-gray-400">
+                  <p className="text-xs text-gray-400">
                     Phone
                   </p>
                   <p className="text-sm font-medium">+1 (234) 567-890</p>
@@ -255,7 +255,7 @@ const Footer = () => {
 
             {/* Social Links */}
             <div>
-              <p className="text-sm font-semibold text-gray-900 dark:text-white mb-3">
+              <p className="text-sm font-semibold text-white mb-3">
                 Follow Me
               </p>
               <div className="flex gap-3">
@@ -265,7 +265,7 @@ const Footer = () => {
                     href={item.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 bg-gray-100 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-lg flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-white hover:bg-gradient-to-br hover:from-yellow-500 hover:to-green-500 hover:border-transparent transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                    className="w-10 h-10 bg-gray-900 border border-gray-700 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-gradient-to-br hover:from-yellow-500 hover:to-green-500 hover:border-transparent transition-all duration-300 hover:scale-110 hover:shadow-lg"
                     aria-label={item.name}
                   >
                     {item.icon}
@@ -277,12 +277,12 @@ const Footer = () => {
         </div>
 
         {/* Skills Showcase */}
-        <div className="py-8 border-t border-gray-200 dark:border-gray-800">
+        <div className="py-8 border-t border-gray-800">
           <div className="flex flex-wrap gap-2 justify-center">
             {skills.map((skill, index) => (
               <span
                 key={index}
-                className="px-4 py-2 bg-gradient-to-r from-yellow-500/10 to-green-500/10 border border-gray-200 dark:border-gray-700 rounded-full text-sm text-gray-700 dark:text-gray-300 hover:from-yellow-500/20 hover:to-green-500/20 hover:border-yellow-500/50 dark:hover:border-yellow-500/50 transition-all duration-300 hover:scale-105"
+                className="px-4 py-2 bg-gradient-to-r from-yellow-500/10 to-green-500/10 border border-gray-700 rounded-full text-sm text-gray-300 hover:from-yellow-500/20 hover:to-green-500/20 hover:border-yellow-500/50 transition-all duration-300 hover:scale-105"
               >
                 {skill}
               </span>
@@ -291,35 +291,35 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-gray-200 dark:border-gray-800">
+        <div className="pt-8 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="flex flex-wrap items-center gap-6 text-sm text-gray-600 dark:text-gray-400">
+            <div className="flex flex-wrap items-center gap-6 text-sm text-gray-400">
               <p>
                 © {currentYear}{" "}
-                <span className="font-semibold text-gray-900 dark:text-white">
+                <span className="font-semibold text-white">
                   Hirock
                 </span>
                 . All rights reserved.
               </p>
               <Link
                 href="/privacy"
-                className="hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors duration-300"
+                className="hover:text-yellow-400 transition-colors duration-300"
               >
                 Privacy Policy
               </Link>
               <Link
                 href="/terms"
-                className="hover:text-green-600 dark:hover:text-green-400 transition-colors duration-300"
+                className="hover:text-green-400 transition-colors duration-300"
               >
                 Terms of Service
               </Link>
             </div>
 
-            <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
+            <div className="flex items-center gap-2 text-sm text-gray-400">
               <span>Made with</span>
               <span className="text-red-500 animate-pulse">❤️</span>
               <span>and</span>
-              <div className="flex items-center gap-1 px-3 py-1 bg-gradient-to-r from-yellow-500/20 to-green-500/20 border border-gray-200 dark:border-gray-700 rounded-full">
+              <div className="flex items-center gap-1 px-3 py-1 bg-gradient-to-r from-yellow-500/20 to-green-500/20 border border-gray-700 rounded-full">
                 <span className="font-semibold bg-gradient-to-r from-yellow-600 to-green-600 bg-clip-text text-transparent">
                   Next.js
                 </span>

@@ -4,8 +4,9 @@ import Image from "next/image";
 
 const Banner = () => {
   return (
-    <section
-      className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 relative flex max-lg:flex-col-reverse items-center justify-between min-h-[90vh] max-w-[1440px] mx-auto px-6 md:px-8 lg:px-12 py-16 lg:py-20 gap-12 overflow-hidden"
+    <section className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 px-6 md:px-8 lg:px-12 py-16 lg:py-20">
+    <div
+      className=" relative flex max-lg:flex-col-reverse items-center justify-between min-h-[90vh] max-w-[1440px] mx-auto  gap-12 overflow-hidden"
       aria-label="Hero banner section"
     >
       {/* Animated Background Elements */}
@@ -38,7 +39,7 @@ const Banner = () => {
             <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 via-purple-700 to-yellow-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200 animate-gradient-x"></div>
 
             <div className="relative bg-gradient-to-br from-purple-500/10 via-transparent to-purple-500/10 backdrop-blur-md rounded-2xl p-8 lg:p-10 border border-purple-500/20 shadow-2xl">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold bg-gradient-to-r  from-white via-gray-100 to-white bg-clip-text text-transparent leading-tight">
+              <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold bg-gradient-to-r  from-white via-gray-100 to-white bg-clip-text text-transparent leading-tight">
                 <TypeWriter
                   texts={[
                     "Hello, I'm Hirock",
@@ -171,6 +172,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
+    </div>
     </section>
   );
 };
