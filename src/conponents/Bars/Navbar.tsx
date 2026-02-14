@@ -1,8 +1,9 @@
 "use client";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-
+import { usePathname } from "next/navigation";
 const Navbar = () => {
+  const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeLink, setActiveLink] = useState("/");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -31,12 +32,18 @@ const Navbar = () => {
     { href: "#download", label: "Download", icon: "📥" },
   ];
 
+  const validPath = pathname.startsWith("/admin");
+
+  if (validPath) {
+    return;
+  }
   return (
     <>
       <nav
         className={`
           fixed top-0 left-0 right-0 z-50
           transition-all duration-500 ease-in-out
+          
           ${
             isScrolled
               ? "bg-gray-900/80 backdrop-blur-xl shadow-lg border-b border-gray-700/50"
